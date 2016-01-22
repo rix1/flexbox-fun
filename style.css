@@ -28,10 +28,28 @@ button,hr{overflow:visible}img,legend{border:0}legend,td,th{padding:0}html{font-
     display: flex;
     height: 100vh;
     border: 10px solid goldenrod;
-    flex-wrap: wrap;
+    /*Similar to justify-content, but works on the corss axis, and need a height to work*/
+    align-items: baseline;
 }
 
 .box{
-    width: calc(33.333333% - 20px);
-    margin: 10px;
+}
+
+.box1{
+    font-size: 10px;
+}
+
+.box5{
+    font-size: 120px;
+}
+.box2{
+    font-size: 300px;
+}
+
+.box3{
+    font-size: 50px;
+}
+
+.box7{
+    font-size: 70px;
 }
