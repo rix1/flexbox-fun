@@ -26,25 +26,25 @@ button,hr{overflow:visible}img,legend{border:0}legend,td,th{padding:0}html{font-
 
 .container{
     display: flex;
-    /*height: 100vh;*/
+    height: 100vh;
     border: 10px solid goldenrod;
+    flex-direction: column;
+    flex-wrap: wrap;
 
     /* Align content
     - We need a wrap, because align-content is only concerned with the cross-axis
     */
-    /*align-content: flex-start;*/
-    /*align-items: flex-end; /* Strech is default */
-    /*justify-content: center;*/
 }
 
 .box{
-    /*To what proportion should I scale myself up or down to when we have extra space, or not enough space*/
+    flex-basis: 250px;
+    flex-grow: 1;
 }
 
-.box5{
-    flex: 1 2 200px;
+.box2{
+    flex-basis: 100px;
 }
 
-.box3{
-    flex: 2 5 20; /*Syntax [grow shrink basis]*/
+.box4{
+    flex-grow: 2;
 }
