@@ -28,28 +28,32 @@ button,hr{overflow:visible}img,legend{border:0}legend,td,th{padding:0}html{font-
     display: flex;
     height: 100vh;
     border: 10px solid goldenrod;
-    /*Similar to justify-content, but works on the corss axis, and need a height to work*/
-    align-items: baseline;
+
+    /* Align content
+    - We need a wrap, because align-content is only concerned with the cross-axis
+    */
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: stretch;; /* Strech is default */
+    justify-content: center;
 }
 
 .box{
-}
-
-.box1{
-    font-size: 10px;
-}
-
-.box5{
-    font-size: 120px;
-}
-.box2{
-    font-size: 300px;
+    width: 33.333333%;
 }
 
 .box3{
-    font-size: 50px;
+    font-size: 20px;
+}
+.box5{
+    align-self: baseline;
 }
 
-.box7{
-    font-size: 70px;
+.box6{
+    font-size:60px;
+    align-self: baseline;
+}
+.box4{
+    font-size: 200px;
+    align-self: baseline;
 }
