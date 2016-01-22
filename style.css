@@ -5,7 +5,7 @@ button,hr{overflow:visible}img,legend{border:0}legend,td,th{padding:0}html{font-
 
 .box{
     color: white;
-    font-size: 8vw;
+    font-size: 50px;
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -26,36 +26,25 @@ button,hr{overflow:visible}img,legend{border:0}legend,td,th{padding:0}html{font-
 
 .container{
     display: flex;
-    height: 100vh;
+    /*height: 100vh;*/
     border: 10px solid goldenrod;
 
     /* Align content
     - We need a wrap, because align-content is only concerned with the cross-axis
     */
-    align-content: flex-start;
-    align-items: flex-end; /* Strech is default */
-    justify-content: center;
+    /*align-content: flex-start;*/
+    /*align-items: flex-end; /* Strech is default */
+    /*justify-content: center;*/
 }
 
 .box{
-    width: 33.333333%;
+    /*To what proportion should I scale myself up or down to when we have extra space, or not enough space*/
 }
 
-.box9{
-    align-self: stretch;
+.box5{
+    flex: 1 2 200px;
 }
 
 .box3{
-    padding-bottom: 20px;
-
-}
-.box5{
-    padding-bottom: 150px;
-}
-
-.box6{
-    padding-bottom: 200px;
-}
-.box4{
-    padding-bottom: 400px;
+    flex: 2 5 20; /*Syntax [grow shrink basis]*/
 }
