@@ -3,48 +3,77 @@ button,hr{overflow:visible}img,legend{border:0}legend,td,th{padding:0}html{font-
 
 *{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
-.box{
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+*, *:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-image: -webkit-linear-gradient(45deg, #ED1E79,#FF7BAC); /* For Safari 5.1 to 6.0 */
+    margin: 0;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.desc{
+    line-height: 20px;
+}
+
+.plan ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.plan ul li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 10px;
 }
 
+.plan ul li:last-child{
+    border-bottom: none;
+}
 
-.box1{background : #FF7BAC;}
-.box2{background : #BDCCD4;}
-.box3{background : #FFFF00;}
-.box4{background : #00FF00;}
-.box5{background : #00FFFF;}
-.box6{background : #FF00FF;}
-.box7{background : #ED1E79;}
-.box8{background : #F15A24;}
-.box9{background : #FBB03B;}
-.box10{background : #F2CDC9;}
+.plan a {
+    text-decoration: none;
+    background: white;
+    padding: 10px;
+    color: black;
+    border-radius: 4px;
+}
 
+.plan h2{
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
 
-.container{
+.price{
+    font-size: 50px;
+    font-family: "Jaapokki";
+    margin: 10px 0;
+}
+
+/*Flex container*/
+.pricing-grid{
+    max-width: 750px;
+    margin: 0 auto;
     display: flex;
-    height: 100vh;
-    border: 10px solid goldenrod;
+    align-items: stretch;
+}
+
+/*Flex items*/
+.plan{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    margin: 20px;
+    text-align: center;
+    padding:20px;
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-
-    /* Align content
-    - We need a wrap, because align-content is only concerned with the cross-axis
-    */
+    justify-content: space-between;
 }
 
-.box{
-    flex-basis: 250px;
-    flex-grow: 1;
-}
-
-.box2{
-    flex-basis: 100px;
-}
-
-.box4{
-    flex-grow: 2;
+.plan .btn{
 }
